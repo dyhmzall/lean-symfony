@@ -9,3 +9,19 @@
 
 > symfony server:start -d
 
+смотреть логи сервера в реальном времени
+
+> symfony server:log
+
+Продакшн урл
+https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
+
+Развертывание в platform.sh
+
+> symfony cloud:deploy
+
+Создать контроллер
+
+> symfony console make:controller Conf
+erenceController
+
