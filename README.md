@@ -20,8 +20,35 @@ https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
 
 > symfony cloud:deploy
 
-Создать контроллер
+# Генераторы
 
-> symfony console make:controller Conf
-erenceController
+### Создать контроллер
+> symfony console make:controller ConferenceController
 
+### Создать сущность
+> symfony console make:entity Conference
+
+### Создать миграцию и накатить
+> symfony console make:migration
+> 
+> symfony console doctrine:migrations:migrate
+
+# Docker
+
+### запустить контейнер
+> docker-compose up -d
+
+### посмотреть список контейнеров
+> docker-compose ps
+
+# PostgreSQL
+
+### открыть клиент
+> symfony run psql
+> 
+> docker-compose exec database psql main main
+
+### резервная копия
+> symfony run pg_dump --data-only > dump.sql
+> 
+> symfony run psql < dump.sql
