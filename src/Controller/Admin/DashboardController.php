@@ -4,6 +4,8 @@ namespace App\Controller\Admin;
 
 use App\Entity\Comment;
 use App\Entity\Conference;
+use App\Entity\Status;
+use App\Entity\Task;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -50,5 +52,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToRoute('Back to the Website', 'fas fa-home', 'homepage');
         yield MenuItem::linkToCrud('Conferences', 'fas fa-map-marker-alt', Conference::class);
         yield MenuItem::linkToCrud('Comments', 'fas fa-comments', Comment::class);
+        yield MenuItem::linkToCrud('Tasks', 'fas fa-comments', Task::class);
+        yield MenuItem::linkToCrud('Status', 'fas fa-comments', Status::class);
     }
 }
