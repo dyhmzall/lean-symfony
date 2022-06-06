@@ -52,3 +52,27 @@ https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
 > symfony run pg_dump --data-only > dump.sql
 > 
 > symfony run psql < dump.sql
+
+
+# Добавить бандл
+
+> symfony composer req "admin:^4"
+
+
+# Админка
+
+### Создать дфшборд
+
+> symfony console make:admin:dashboard
+
+### Создать CRUD
+
+> symfony console make:admin:crud
+
+
+### Фронт
+
+> npm install
+> 
+> npm run build
+
