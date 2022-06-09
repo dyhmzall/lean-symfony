@@ -4,6 +4,9 @@
 
 дополнительная информация https://symfony.com/doc/current/the-fast-track/ru/3-zero.html
 
+Собрать проект
+
+> symfony composer install
 
 Запуск локального сервера для разработки
 
