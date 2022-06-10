@@ -22,7 +22,7 @@ final class Version20220609203301 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
 
         $this->addSql('
-            CREATE TABLE session (
+            CREATE TABLE sessions (
                 sess_id VARCHAR(128) NOT NULL PRIMARY KEY,
                 sess_data BYTEA NOT NULL,
                 sess_lifetime INTEGER NOT NULL,
