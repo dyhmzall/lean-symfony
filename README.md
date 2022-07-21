@@ -36,6 +36,9 @@ https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
 > 
 > symfony console doctrine:migrations:migrate
 
+### Создать форму
+> symfony console make:form CommentFormType Comment
+
 # Docker
 
 ### запустить контейнер
