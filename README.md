@@ -82,3 +82,6 @@ https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
 > 
 > npm run build
 
+# Секретные данные
+
+> symfony console secrets:set AKISMET_KEY
