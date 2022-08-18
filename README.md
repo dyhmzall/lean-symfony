@@ -85,3 +85,26 @@ https://main-bvxea6i-ucbgioov6qgvs.au.platformsh.site/
 # Секретные данные
 
 > symfony console secrets:set AKISMET_KEY
+
+# Тесты
+
+## создать тест
+
+> symfony console make:test TestCase SpamCheckerTest
+
+## запустить тесты
+
+> symfony php bin/phpunit
+> 
+> symfony php bin/phpunit tests/Controller/ConferenceControllerTest.php
+
+## применить миграции к тестовой базе
+
+> symfony console doctrine:database:create --env=test
+> 
+> symfony console doctrine:migrations:migrate -n --env=test
+
+## загрузить фикстуры
+
+> symfony console doctrine:fixtures:load --env=test
+
