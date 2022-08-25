@@ -2,13 +2,13 @@
 
 namespace App\Tests\Controller;
 
-use Symfony\Component\Panther\PantherTestCase;
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class ConferenceControllerTest extends PantherTestCase
+class ConferenceControllerTest extends WebTestCase
 {
     public function testIndex()
     {
-        $client = static::createPantherClient(['external_base_uri' => $_SERVER['SYMFONY_PROJECT_DEFAULT_ROUTE_URL']]);
+        $client = static::createClient();
         $client->request('GET', '/');
 
         $this->assertResponseIsSuccessful();
